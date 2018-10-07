@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using JobMatcher.Business;
 using JobMatcher.Data.DAL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,7 +27,8 @@ namespace JobMatcher
         {
             services.AddMvc();
 
-            services.AddTransient<IRepository, Repository>();
+            services.AddScoped<IRepository, Repository>();
+            services.AddScoped<ICandidateJobMatcher, CandidateJobMatcher>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

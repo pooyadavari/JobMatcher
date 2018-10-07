@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -20,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\JobMatcher.Business\JobMatcher.Business.csproj" />
+    <ProjectReference Include="..\JobMatcher.Data\JobMatcher.Data.csproj" />
   </ItemGroup>
 
 </Project>

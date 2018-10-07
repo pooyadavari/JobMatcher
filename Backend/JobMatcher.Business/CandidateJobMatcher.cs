@@ -6,19 +6,19 @@ using System.Text;
 
 namespace JobMatcher.Business
 {
-    public class CandidateJobMatcher
+    public class CandidateJobMatcher : ICandidateJobMatcher
     {
-        readonly IRepository rep;
+        readonly IRepository repository;
 
-        public CandidateJobMatcher(IRepository repository)
+        public CandidateJobMatcher(IRepository _repository)
         {
-            this.rep = repository;
+            this.repository = _repository;
         }
 
         public List<CandidateJob> GetCandidateJobs()
         {
-            List<Candidate> candidates = rep.GetCandidates().Result;
-            List<Job> jobs = rep.GetJobs().Result;
+            List<Candidate> candidates = repository.GetCandidates().Result;
+            List<Job> jobs = repository.GetJobs().Result;
             List<CandidateJob> candidateJobs = new List<CandidateJob>();
 
             candidates.ForEach(c =>
