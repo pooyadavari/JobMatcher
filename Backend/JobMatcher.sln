@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobMatcher.Business", "JobM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobMatcher.Data", "JobMatcher.Data\JobMatcher.Data.csproj", "{42663372-B108-4506-A425-070113EB35F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobMatcher.Test", "JobMatcher.Test\JobMatcher.Test.csproj", "{78D51E28-841C-433D-9765-9038B9CDB9BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{42663372-B108-4506-A425-070113EB35F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42663372-B108-4506-A425-070113EB35F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42663372-B108-4506-A425-070113EB35F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78D51E28-841C-433D-9765-9038B9CDB9BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D51E28-841C-433D-9765-9038B9CDB9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D51E28-841C-433D-9765-9038B9CDB9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D51E28-841C-433D-9765-9038B9CDB9BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

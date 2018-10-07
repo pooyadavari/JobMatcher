@@ -1,5 +1,10 @@
 /Backend/.vs/
 /Backend/JobMatcher/obj/
+/Backend/JobMatcher/bin/
 /Backend/JobMatcher.Business/obj/
+/Backend/JobMatcher.Business/bin/
 /Backend/JobMatcher.Data/obj/
+/Backend/JobMatcher.Data/bin/
+/Backend/JobMatcher.Test/obj/
+
 
