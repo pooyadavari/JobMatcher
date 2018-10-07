@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobMatcher", "JobMatcher\JobMatcher.csproj", "{A589CF3A-B1F0-4538-BD07-29E4DAA2B0C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobMatcher", "JobMatcher\JobMatcher.csproj", "{A589CF3A-B1F0-4538-BD07-29E4DAA2B0C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobMatcher.Business", "JobMatcher.Business\JobMatcher.Business.csproj", "{02DC09EF-EB45-4C15-9729-C93496CE91A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobMatcher.Data", "JobMatcher.Data\JobMatcher.Data.csproj", "{42663372-B108-4506-A425-070113EB35F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{A589CF3A-B1F0-4538-BD07-29E4DAA2B0C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A589CF3A-B1F0-4538-BD07-29E4DAA2B0C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A589CF3A-B1F0-4538-BD07-29E4DAA2B0C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02DC09EF-EB45-4C15-9729-C93496CE91A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DC09EF-EB45-4C15-9729-C93496CE91A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DC09EF-EB45-4C15-9729-C93496CE91A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DC09EF-EB45-4C15-9729-C93496CE91A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42663372-B108-4506-A425-070113EB35F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42663372-B108-4506-A425-070113EB35F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42663372-B108-4506-A425-070113EB35F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42663372-B108-4506-A425-070113EB35F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

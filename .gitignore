@@ -1,3 +1,5 @@
-
 /Backend/.vs/
 /Backend/JobMatcher/obj/
+/Backend/JobMatcher.Business/obj/
+/Backend/JobMatcher.Data/obj/
+
