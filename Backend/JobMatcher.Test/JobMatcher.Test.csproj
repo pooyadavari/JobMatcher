@@ -12,4 +12,10 @@
     <PackageReference Include="MSTest.TestFramework" Version="1.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JobMatcher.Business\JobMatcher.Business.csproj" />
+    <ProjectReference Include="..\JobMatcher.Data\JobMatcher.Data.csproj" />
+    <ProjectReference Include="..\JobMatcher\JobMatcher.csproj" />
+  </ItemGroup>
+
 </Project>
