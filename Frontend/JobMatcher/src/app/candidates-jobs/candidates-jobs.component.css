@@ -6,4 +6,54 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  height: 1000px;
+  padding: 20px;
+}
+
+.main-card {
+  width: 80%;
+  height: 1000px;
+}
+
+.mat-table {
+  overflow: auto;
+}
+
+.mat-cell{
+display:flex;
+justify-content:flex-start;
+white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+white-space: -pre-wrap;      /* Opera 4-6 */
+white-space: -o-pre-wrap;    /* Opera 7 */
+white-space: pre-wrap;       /* css-3 */
+word-wrap: break-word;       /* Internet Explorer 5.5+ */
+word-break: break-all;
+white-space: normal;
+text-decoration-color: teal;
+color: black;
+border: black;
+font: bolder;
+/*text-align: left;*/
+height: max-content;
+}
+
+.mat-header-cell {
+display:flex;
+text-decoration-color: teal;
+text-decoration-style: solid;
+text-align: center;
+font-weight: 1000;
+height: 90px;
+display: flex;
+justify-content: flex-start;
+color: teal;
+font: bolder;
+}
+
+.mc-color-success {
+color: #64bd63;
+}
+
+.mc-color-danger {
+color: #dd5826;
 }

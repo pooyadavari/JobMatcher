@@ -1,13 +1,10 @@
 <div class="pageWrapper">
   <form (ngSubmit)="onSubmit()">
-    <mat-card class="example-card">
+    <mat-card class="main-card">
       <mat-card-header>
-        <mat-card-title>Job Matcher applications</mat-card-title>
+        <mat-card-title>Job Matcher application</mat-card-title>
         <mat-card-subtitle>JobAdder coding challenge</mat-card-subtitle>
       </mat-card-header>
-      <mat-card-actions>
-        <button type="submit" mat-button color="primary">Load</button>
-      </mat-card-actions>
       <mat-card-content>
         <div class="mat-elevation-z8">
           <mat-table [dataSource]="dataSourceResults" matSort>
@@ -22,14 +19,14 @@
                   <mat-cell *matCellDef="let row" class="mat-cell-result"> {{row.jobCompany}} </mat-cell>
               </ng-container>
 
-              <ng-container matColumnDef="jobSkills">
-                  <mat-header-cell *matHeaderCellDef mat-sort-header class="mat-header-cell-result"> Job Skills </mat-header-cell>
-                  <mat-cell *matCellDef="let row" class="mat-cell-result"> {{row.jobSkills}} </mat-cell>
-              </ng-container>
-
               <ng-container matColumnDef="candidateName">
                   <mat-header-cell *matHeaderCellDef mat-sort-header class="mat-header-cell-result"> Candidate name </mat-header-cell>
                   <mat-cell *matCellDef="let row" class="mat-cell-result"> {{row.candidateName}} </mat-cell>
+              </ng-container>
+
+              <ng-container matColumnDef="jobSkills">
+                  <mat-header-cell *matHeaderCellDef mat-sort-header class="mat-header-cell-result"> Job Skills </mat-header-cell>
+                  <mat-cell *matCellDef="let row" class="mat-cell-result"> {{row.jobSkills}} </mat-cell>
               </ng-container>
 
               <ng-container matColumnDef="candidateSkillTags">
@@ -48,6 +45,9 @@
 
         </div>
       </mat-card-content>
+      <mat-card-actions>
+          <button type="submit" mat-raised-button color="warn">Show Candidate Jobs</button>
+      </mat-card-actions>
     </mat-card>
     <div *ngIf="this.isLoaded==false">
       Loading...
