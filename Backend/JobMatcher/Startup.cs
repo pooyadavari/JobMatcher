@@ -26,6 +26,7 @@ namespace JobMatcher
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddCors();
 
             services.AddScoped<IRepository, Repository>();
             services.AddScoped<ICandidateJobMatcher, CandidateJobMatcher>();
@@ -39,6 +40,10 @@ namespace JobMatcher
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(builder =>
+                builder.WithOrigins("*")
+                .AllowAnyHeader());
+    
             app.UseMvc();
         }
     }
