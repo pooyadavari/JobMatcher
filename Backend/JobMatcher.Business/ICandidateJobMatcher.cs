@@ -7,6 +7,6 @@ namespace JobMatcher.Business
 {
     public interface ICandidateJobMatcher
     {
-        List<CandidateJob> GetCandidateJobs();
+        List<CandidateJob> GetCandidatesJobs();
     }
 }

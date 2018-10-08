@@ -15,7 +15,7 @@ namespace JobMatcher.Business
             this.repository = _repository;
         }
 
-        public List<CandidateJob> GetCandidateJobs()
+        public List<CandidateJob> GetCandidatesJobs()
         {
             List<Candidate> candidates = repository.GetCandidates().Result;
             List<Job> jobs = repository.GetJobs().Result;

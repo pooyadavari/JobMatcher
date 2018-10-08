@@ -24,7 +24,7 @@ namespace JobMatcher.Controllers
         [HttpGet]
         public ActionResult Get()
         {
-            List<CandidateJob> candidatesJobs = candidateJobMatcher.GetCandidateJobs();
+            List<CandidateJob> candidatesJobs = candidateJobMatcher.GetCandidatesJobs();
             return Ok(candidatesJobs);
         }        
     }
