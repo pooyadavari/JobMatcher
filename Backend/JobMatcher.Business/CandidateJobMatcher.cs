@@ -25,8 +25,12 @@ namespace JobMatcher.Business
             {
                 candidateJobs.Add(new CandidateJob
                 {
-                    Candidate = c,
-                    Job = jobs[0]
+                    CandidateName = c.Name,
+                    CandidateSkillTags = c.SkillTags,
+                    JobName = jobs[0].Name,
+                    JobCompany = jobs[0].Company,
+                    JobSkills = jobs[0].Skills
+
                 });
             });
 

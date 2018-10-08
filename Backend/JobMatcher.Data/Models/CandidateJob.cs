@@ -3,7 +3,10 @@ namespace JobMatcher.Data.Models
 {
     public class CandidateJob
     {
-        public Candidate Candidate { get; set; }
-        public Job Job { get; set; }
+        public string CandidateName { get; set; }
+        public string CandidateSkillTags { get; set; }
+        public string JobName { get; set; }
+        public string JobCompany { get; set; }
+        public string JobSkills { get; set; }
     }
 }
