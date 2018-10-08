@@ -1,0 +1,9 @@
+.example-card {
+  max-width: 400px;
+}
+
+.pageWrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}

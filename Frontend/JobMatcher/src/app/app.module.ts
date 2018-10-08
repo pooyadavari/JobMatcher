@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CandidatesJobsComponent } from './candidates-jobs/candidates-jobs.component';
@@ -11,6 +12,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { CandidatesJobsService } from './Services/candidates-jobs.service';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,10 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatTableModule,
     MatPaginatorModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CandidatesJobsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

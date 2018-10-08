@@ -1,8 +1,8 @@
 
 export interface CandidateJob {
-  CandidateName: string;
-  CandidateSkillTags: string;
-  JobName: string;
-  JobCompany: string;
-  JobSkills: string;
+  candidateName: string;
+  candidateSkillTags: string;
+  jobName: string;
+  jobCompany: string;
+  jobSkills: string;
 }
