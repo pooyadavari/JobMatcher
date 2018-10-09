@@ -12,7 +12,7 @@ export class CandidatesJobsComponent implements OnInit, AfterViewInit {
 
   dataSourceResults: any;
 
-  displayedColumns: string[] = ['jobName', 'jobCompany', 'jobSkills', 'candidateName', 'candidateSkillTags'];
+  displayedColumns: string[] = ['jobName', 'jobCompany', 'candidateName' , 'jobSkills', 'candidateSkillTags'];
   candidatesJobsResults;
   isLoaded = true;
 

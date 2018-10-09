@@ -12,12 +12,6 @@ namespace JobMatcher.Data.Models
         public string Company { get; set; }
         public string Skills { get; set; }
 
-        public List<string> skillsList
-        {
-            get
-            {
-                return Array.ConvertAll(Skills.Split(','), p => p.Trim()).ToList();
-            }
-        }
+        public List<string> SkillsList => Skills.Split(',').Select(s => s.Trim()).ToList();
     }
 }

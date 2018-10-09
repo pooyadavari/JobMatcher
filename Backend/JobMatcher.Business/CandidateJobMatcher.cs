@@ -2,6 +2,7 @@
 using JobMatcher.Data.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace JobMatcher.Business
@@ -19,22 +20,26 @@ namespace JobMatcher.Business
         {
             List<Candidate> candidates = repository.GetCandidates().Result;
             List<Job> jobs = repository.GetJobs().Result;
-            List<CandidateJob> candidateJobs = new List<CandidateJob>();
+            List<CandidateJob> candidatesJobs = new List<CandidateJob>();
+            Candidate candidate = null;
 
-            candidates.ForEach(c =>
+            jobs.ForEach(j =>
             {
-                candidateJobs.Add(new CandidateJob
-                {
-                    CandidateName = c.Name,
-                    CandidateSkillTags = c.SkillTags,
-                    JobName = jobs[0].Name,
-                    JobCompany = jobs[0].Company,
-                    JobSkills = jobs[0].Skills
+                candidate = candidates.OrderByDescending(c => c.SkillTagsList.Intersect(j.SkillsList).Count())
+                          .First();
 
+                candidatesJobs.Add(new CandidateJob
+                {
+                    JobName = j.Name,
+                    JobCompany = j.Company,
+                    JobSkills = j.Skills,
+
+                    CandidateName = candidate.Name,
+                    CandidateSkillTags = candidate.SkillTags
                 });
             });
 
-            return candidateJobs;
+            return candidatesJobs;
         }
     }
 }

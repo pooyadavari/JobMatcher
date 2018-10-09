@@ -10,12 +10,6 @@ namespace JobMatcher.Data.Models
         public string Name { get; set; }
         public string SkillTags { get; set; }
 
-        public List<string> skillTagsList
-        {
-            get
-            {               
-                return Array.ConvertAll(SkillTags.Split(','), p => p.Trim()).ToList();
-            }
-        }
+        public List<string> SkillTagsList => SkillTags.Split(',').Select(s => s.Trim()).ToList();
     }
 }
